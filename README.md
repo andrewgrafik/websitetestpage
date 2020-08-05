@@ -1,37 +1,87 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/andrewgrafik/websitetestpage/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clarusway Project - 001</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      max-width: 600px;
+      margin: auto;
+    }
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    div {
+      margin-top: 100px;
+      margin-bottom: 50px;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-### Markdown
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    }
 
-```markdown
-Syntax highlighted code block
+    .footnote {
+      color: rgba(0, 0, 255, 0.712);
+    }
 
-# Header 1
-## Header 2
-### Header 3
+    .carousel {
+      height: 600px;
+      background-color: lightgreen;
 
-- Bulleted
-- List
+    }
 
-1. Numbered
-2. List
+  </style>
+</head>
 
-**Bold** and _Italic_ and `Code` text
+<body>
 
-[Link](url) and ![Image](src)
-```
+  <div><img src="https://clarusway.com/wp-content/uploads/2020/06/clarusway_logo.png" /></div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  <h2> Project: Student_Name's Kittens Carousel</h2>
 
-### Jekyll Themes
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/andrewgrafik/websitetestpage/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./cat0.jpg" alt="Cuties First">
+      </div>
+      <div class="item">
+        <img src="./cat1.jpg" alt="Cuties Second">
+      </div>
+      <div class="item">
+        <img src="./cat2.jpg" alt="Cuties Third">
+      </div>
+    </div>
 
-### Support or Contact
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+  <p class="footnote"><i>This static website is deployed by <b> Students_Name </b> on AWS EC2 Instance using AWS
+      Clouldformation Service.</i></p>
+</body>
+
+</html>
